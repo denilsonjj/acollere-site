@@ -133,6 +133,7 @@ button {
   padding-top: 80px;
   padding-bottom: 80px;
   position: relative;
+  scroll-margin-top: 80px;
 }
 
 .text-center {
@@ -871,16 +872,10 @@ button {
   overflow: hidden;
 }
 
-.stories-header-wrapper {
+.stories-controls-bar {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 32px;
-}
-
-.stories-header-text {
-  max-width: 680px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .stories-nav-arrows {
@@ -1826,14 +1821,8 @@ button {
   }
 
   /* Responsividade do Carrossel de Stories */
-  .stories-header-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .stories-nav-arrows {
-    align-self: flex-end;
+  .stories-controls-bar {
+    margin-bottom: 14px;
   }
 
   .story-card {
