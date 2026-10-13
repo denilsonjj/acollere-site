@@ -746,7 +746,7 @@ button {
 
 /* 12. SEÇÃO FAQ */
 .faq-section {
-  background-color: var(--bg-page);
+  background-color: var(--bg-white);
 }
 
 .faq-container {
@@ -760,21 +760,25 @@ button {
 }
 
 .faq-item {
-  background: var(--bg-white);
+  background: #fcf9fb;
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-md);
   overflow: hidden;
   transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.25s ease;
 }
 
 .faq-item:hover {
   border-color: rgba(196, 7, 117, 0.25);
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px rgba(196, 7, 117, 0.05);
 }
 
 .faq-item.active {
+  background-color: #ffffff;
   border-color: var(--primary);
-  box-shadow: 0 4px 18px rgba(196, 7, 117, 0.08);
+  box-shadow: 0 6px 20px rgba(196, 7, 117, 0.08);
 }
 
 .faq-question {
@@ -867,7 +871,7 @@ button {
 
 /* 12.5 SEÇÃO DE HISTÓRIAS & DEPOIMENTOS (CARROSSEL ESTILO STORIES) */
 .stories-section {
-  background: linear-gradient(180deg, var(--bg-page) 0%, #f6eff7 50%, var(--bg-page) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f9eff8 50%, #ffffff 100%);
   position: relative;
   overflow: hidden;
 }
